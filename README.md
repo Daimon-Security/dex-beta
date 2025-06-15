@@ -59,3 +59,28 @@ router.swapExactETHForTokens{value: msg.value}(tokenOut, recipient);
 
 // Removing liquidity and receiving ETH back
 router.removeLiquidityETH(token, liquidityAmount);
+```
+
+---
+
+## Security
+
+- Utilizes OpenZeppelin's `SafeERC20` for secure token transfers.
+- Protects sensitive functions with `ReentrancyGuard` to prevent reentrancy attacks.
+- Validates inputs and state to prevent common DEX vulnerabilities.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+Chainova Devs
+
+---
+
+For more info or support, reach out to the Chainova team.
